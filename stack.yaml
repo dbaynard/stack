@@ -1,4 +1,4 @@
-resolver: lts-11.2
+resolver: https://gist.github.com/dbaynard/9693107a883a6282f52f22785d0072e2/raw/e575fa64d8e2c0ec9bb4c370a5fc8b20eb613c26
 
 # docker:
 #   enable: true
@@ -19,9 +19,12 @@ flags:
 extra-deps:
 - rio-0.1.0.0@rev:0
 - Cabal-2.2.0.1@rev:0
-- hackage-security-0.5.3.0@rev:0
-- hpack-0.28.2
-- http-api-data-0.3.8.1@rev:0
+#- hackage-security-0.5.3.0@rev:0
+#- hpack-0.28.2
+#- http-api-data-0.3.8.1@rev:0
+
+- unliftio-0.2.6.0
+- typed-process-0.2.2.0
 
 # Avoid https://github.com/commercialhaskell/stack/issues/3922
 # (triggered because later versions of persistent transitively depends

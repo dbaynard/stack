@@ -106,10 +106,10 @@ dependencies:
 - time
 - tls
 - transformers
-- typed-process >= 0.2.1.0
+- typed-process >= 0.2.2.0
 - unicode-transforms
 - unix-compat
-- unliftio >= 0.2.4.0
+- unliftio >= 0.2.6.0
 - unordered-containers
 - vector
 - yaml
