@@ -14,13 +14,13 @@ nix:
     - zlib
     - unzip
 extra-deps:
-- bitarray-0.0.1.1
-- fsnotify-0.2.1.2
-- project-template-0.2.0.1
-- regex-applicative-text-0.1.0.1
-- unicode-transforms-0.3.4
+# - bitarray-0.0.1.1
+# - fsnotify-0.2.1.2
+# - project-template-0.2.0.1
+# - regex-applicative-text-0.1.0.1
+# - unicode-transforms-0.3.4
 - githash-0.1.0.0@rev:0
-- hpack-0.29.0@rev:0
+# - hpack-0.29.0@rev:0
 
 ghc-options:
    "$locals": -fhide-source-paths
