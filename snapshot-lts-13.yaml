@@ -1,5 +1,5 @@
 resolver: lts-13.2
 name: snapshot-for-building-stack-with-ghc-8.6.3
 
-packages:
-- Cabal-2.4.0.1@rev:0
+packages: []
+#- Cabal-2.4.0.1@rev:0
