@@ -4,6 +4,12 @@ synopsis: A dummy package which exposes a backpack signature
 license: BSD-3-Clause OR Apache-2.0
 category: Development
 
+custom-setup:
+  dependencies:
+  - Cabal == 2.4.1.0
+  - base >= 4.7 && < 5
+  - pretty-show
+
 dependencies:
   - base >= 4.7 && < 5
 
