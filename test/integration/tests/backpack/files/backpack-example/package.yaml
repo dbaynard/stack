@@ -21,3 +21,10 @@ internal-libraries:
     source-dirs: sigs
     signatures:
     - Str
+
+  str-bytestring:
+    source-dirs: str-bs
+    dependencies:
+    - bytestring
+    exposed-modules:
+    - Str
