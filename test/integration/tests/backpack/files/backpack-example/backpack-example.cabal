@@ -4,7 +4,7 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8ba8327b73af2dfa33fc344d7d8d18304efaf8f8101774ccb7986089137d3d8b
+-- hash: 7608c08af442dd000180a51caff2d9fdb95439920efed4bc2e98e70949aa8171
 
 name:           backpack-example
 version:        0.1.0.0
@@ -18,10 +18,13 @@ library
       Lib
   other-modules:
       Paths_backpack_example
+  signatures:
+      Str
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , concat-indef
   default-language: Haskell2010
 
 library concat-indef

@@ -9,6 +9,10 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - concat-indef
+  signatures:
+  - Str
 
 internal-libraries:
   concat-indef:
