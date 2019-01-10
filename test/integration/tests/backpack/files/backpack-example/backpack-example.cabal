@@ -4,20 +4,14 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 866d5b597c0efea1c4ee4896412369f8d92714e8686d1f020cf9bd8d8759f3d4
+-- hash: 8ba8327b73af2dfa33fc344d7d8d18304efaf8f8101774ccb7986089137d3d8b
 
 name:           backpack-example
 version:        0.1.0.0
 synopsis:       A dummy package which exposes a backpack signature
 category:       Development
 license:        (BSD-3-Clause OR Apache-2.0)
-build-type:     Custom
-
-custom-setup
-  setup-depends:
-      Cabal ==2.4.1.0
-    , base >=4.7 && <5
-    , pretty-show
+build-type:     Simple
 
 library
   exposed-modules:
