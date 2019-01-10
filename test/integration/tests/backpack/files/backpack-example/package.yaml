@@ -28,3 +28,29 @@ internal-libraries:
     - bytestring
     exposed-modules:
     - Str
+
+  stringutils-indef:
+    source-dirs: su-indef
+    implicit-signatures:
+    - Str
+    dependencies:
+    - concat-indef
+    exposed-modules:
+    - StringUtils
+
+  one-string:
+    implicit-signatures:
+    - Str
+    dependencies:
+    - concat-indef
+    - stringutils-indef
+
+  two-string:
+    implicit-signatures:
+    - Str
+    - Str2
+    dependencies:
+    - concat-indef
+    - name: stringutils-indef
+      mixin:
+      - requires (Str as Str2)

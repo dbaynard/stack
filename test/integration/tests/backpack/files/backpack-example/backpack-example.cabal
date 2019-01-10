@@ -4,7 +4,7 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 37fb3dc7f6aa05fffc5a41f9219b02c81b0f42a67b35f3e9bb0a2260a84c98e7
+-- hash: 866d5b597c0efea1c4ee4896412369f8d92714e8686d1f020cf9bd8d8759f3d4
 
 name:           backpack-example
 version:        0.1.0.0
@@ -43,6 +43,15 @@ library concat-indef
       base >=4.7 && <5
   default-language: Haskell2010
 
+library one-string
+  other-modules:
+      Paths_backpack_example
+  build-depends:
+      base >=4.7 && <5
+    , concat-indef
+    , stringutils-indef
+  default-language: Haskell2010
+
 library str-bytestring
   exposed-modules:
       Str
@@ -53,4 +62,27 @@ library str-bytestring
   build-depends:
       base >=4.7 && <5
     , bytestring
+  default-language: Haskell2010
+
+library stringutils-indef
+  exposed-modules:
+      StringUtils
+  other-modules:
+      Paths_backpack_example
+  hs-source-dirs:
+      su-indef
+  build-depends:
+      base >=4.7 && <5
+    , concat-indef
+  default-language: Haskell2010
+
+library two-string
+  other-modules:
+      Paths_backpack_example
+  build-depends:
+      base >=4.7 && <5
+    , concat-indef
+    , stringutils-indef
+  mixins:
+      stringutils-indef requires (Str as Str2)
   default-language: Haskell2010
