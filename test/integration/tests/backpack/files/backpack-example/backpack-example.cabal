@@ -1,0 +1,25 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d966c8280868db6035f7275370ebd41c68c3c91213c848bbf9a1c82de3a3ceb7
+
+name:           backpack-example
+version:        0.1.0.0
+synopsis:       A dummy package which exposes a backpack signature
+category:       Development
+license:        (BSD-3-Clause OR Apache-2.0)
+build-type:     Simple
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_backpack_example
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
